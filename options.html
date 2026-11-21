@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 14px system-ui, sans-serif; margin: 16px; min-width: 300px; }
+    label { display: block; margin-bottom: 12px; }
+    input[type=number] { width: 70px; }
+    #status { color: #2e7d32; margin-left: 8px; opacity: 0; transition: opacity .2s; }
+    #status.on { opacity: 1; }
+  </style>
+</head>
+<body>
+  <label><input type="checkbox" id="auto"> Выгружать неактивные вкладки автоматически</label>
+  <label>Через <input type="number" id="minutes" min="1" value="30"> мин. без использования</label>
+  <span id="status">Сохранено</span>
+  <script src="options.js"></script>
+</body>
+</html>
